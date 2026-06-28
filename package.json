@@ -1,16 +1,20 @@
 {
   "name": "@hiob/platform",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "type": "module",
   "main": "./src/index.js",
   "exports": {
     ".": "./src/index.js",
     "./types": "./src/types.js"
   },
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "dependencies": {
     "@supabase/supabase-js": "^2.106.0",
     "@supabase/ssr": "^0.10.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
